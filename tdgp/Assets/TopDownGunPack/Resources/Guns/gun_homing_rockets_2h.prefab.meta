@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: b71991633c30b4c7792fd9e1db98b92f
+labels:
+- Gun
+- Rocket
+- RocketLauncher
+- Homing
+- Missile
+NativeFormatImporter:
+  userData: 

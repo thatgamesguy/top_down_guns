@@ -1,0 +1,19 @@
+Version History
+
+1.0.
+Initial Release
+
+1.2.
+- Added support for Unity 5.3.x
+- Added code comments and documentation
+- Minor performance improvements gained from minimising unnecessary calls to GetComponenet.
+
+1.3.
+- Added support for Unity 5.5.x.
+
+1.4.
+- Updated package to 5.6.x. (removed previous versions).
+- Fixed weapon pickup bug in example scene.
+- Fixed 'Can not play a disabled audio source' bug in example scene.
+- Fixed issue where rocket launcher muzzle animation gets stuck on last frame.
+- Fixed player animation quickly switching between idle and walking when weapon knockback applied.

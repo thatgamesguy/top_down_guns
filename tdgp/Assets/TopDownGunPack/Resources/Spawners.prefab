@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &120028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420028}
+  - 114: {fileID: 11420026}
+  - 114: {fileID: 11420024}
+  - 114: {fileID: 11420028}
+  m_Layer: 0
+  m_Name: Spawners
+  m_TagString: Spawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.200152412, y: -.339396566, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11420024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d1736bb510640b79a7d663fbf598f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 198648, guid: fd44b04c0c5cd49108e44c3b77603761, type: 2}
+  SpawnTime: 1.5
+  MaxEnemiesOnScreen: 10
+  KillCount: {fileID: 0}
+--- !u!114 &11420026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea02e2f809f6e4e2dbe890cc1f55cf03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Floor: {fileID: 138196, guid: e3b6051d01b3d4edc9314f1f0898ee16, type: 2}
+  Wall_N: {fileID: 123820, guid: 3d777beaa80a84cb2a02c78154620080, type: 2}
+  Wall_NE: {fileID: 154258, guid: 07d1496c586584bf5b2b56b8ecb034cd, type: 2}
+  Wall_E: {fileID: 145040, guid: 105d3c27a3d8e4eb4b407fe87c836c39, type: 2}
+  Wall_SE: {fileID: 111124, guid: 8822684d0c8f94a988802e0c66531594, type: 2}
+  Wall_S: {fileID: 123820, guid: 3d777beaa80a84cb2a02c78154620080, type: 2}
+  Wall_SW: {fileID: 184518, guid: 4941ef7332d2c4facaeb40d42c4d7068, type: 2}
+  Wall_W: {fileID: 145040, guid: 105d3c27a3d8e4eb4b407fe87c836c39, type: 2}
+  Wall_NW: {fileID: 128658, guid: f98902b3cd8524487a7358babceb9f67, type: 2}
+  RoomSize: {x: 25, y: 20}
+--- !u!114 &11420028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf03473b5b6e4cbd9430e052c8429e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  WeaponPrefabs:
+  - {fileID: 179074, guid: bef5c470e16954741a234e3e5c06b544, type: 2}
+  - {fileID: 190784, guid: 769e222c4c76d4b9ba2c2787b5d33142, type: 2}
+  - {fileID: 167354, guid: 28262bac84a1d4b33bd6d9ca1158d3ba, type: 2}
+  - {fileID: 198248, guid: 8ae24b3578c02416e8545abd4a961055, type: 2}
+  - {fileID: 169710, guid: 693dc53e310ba480a97c038d9e4843f5, type: 2}
+  - {fileID: 151426, guid: 346ba831b045b4b5a943fd02a54b7534, type: 2}
+  - {fileID: 169760, guid: 7fc870bdd05f04611844113a667a0944, type: 2}
+  - {fileID: 182246, guid: 105331043ddc74a59b4eac7846efe588, type: 2}
+  - {fileID: 159840, guid: 1a524a848376c41efa1aaaca59ee9764, type: 2}
+  - {fileID: 175218, guid: 742eda03021ca43188e1b8c446477e89, type: 2}
+  - {fileID: 144656, guid: b71991633c30b4c7792fd9e1db98b92f, type: 2}
+  - {fileID: 118946, guid: 2f68ec119cb9b4d2dba44df06d9d8863, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 120028}
+  m_IsPrefabParent: 1
